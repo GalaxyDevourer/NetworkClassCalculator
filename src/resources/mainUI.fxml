@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controllers.MainController">
+   <children>
+      <Button fx:id="calculateBtn" layoutX="277.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#start" prefHeight="28.0" prefWidth="108.0" text="Calculate" />
+      <TextField fx:id="addressInput" layoutX="12.0" layoutY="14.0" prefHeight="28.0" prefWidth="249.0" promptText="Example:  192.0.1.0" />
+      <AnchorPane layoutX="12.0" layoutY="55.0" prefHeight="135.0" prefWidth="375.0" style="-fx-border-color: aaaaaa;">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" prefHeight="20.0" prefWidth="56.0" text="Binary:" />
+            <Label layoutX="14.0" layoutY="40.0" prefHeight="20.0" prefWidth="57.0" text="Class:" />
+            <Label layoutX="14.0" layoutY="70.0" prefHeight="20.0" prefWidth="100.0" text="Total networks:" />
+            <Label layoutX="14.0" layoutY="100.0" prefHeight="20.0" prefWidth="100.0" text="Total nodes:" />
+            <Label fx:id="classLabel" layoutX="84.0" layoutY="40.0" prefHeight="20.0" prefWidth="259.0" />
+            <Label fx:id="binaryAddressLabel" layoutX="84.0" layoutY="10.0" prefHeight="20.0" prefWidth="260.0" />
+            <Label fx:id="totalNetsLabel" layoutX="123.0" layoutY="70.0" prefHeight="20.0" prefWidth="219.0" />
+            <Label fx:id="totalNodesLabel" layoutX="122.0" layoutY="100.0" prefHeight="20.0" prefWidth="220.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
